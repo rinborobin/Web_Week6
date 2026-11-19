@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+/* clamp(min, preferred, max)
+   never smaller than 300px, in between 100%, never bigger than 800px */
+.content {
+  width: clamp(300px, 100%, 800px);
+  height: 400px;
+  margin: 0 auto;
+  background-color: #d4e817;
+}

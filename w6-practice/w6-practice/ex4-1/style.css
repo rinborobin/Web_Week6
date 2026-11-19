@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Small screens (default): show the small one */
+.small {
+  display: inline-block;
+  background-color: tomato;
+  color: white;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.big {
+  display: none;
+  background-color: yellowgreen;
+  color: white;
+  padding: 12px 20px;
+  font-size: 32px;
+}
+
+/* Screens 600px and wider: show the big one */
+@media only screen and (min-width: 600px) {
+  .small {
+    display: none;
+  }
+
+  .big {
+    display: inline-block;
+  }
+}

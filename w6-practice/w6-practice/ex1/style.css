@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Large screens: 4 columns (as in the mockup) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* max-width 1000px: 3 columns */
+@media (max-width: 1000px) {
+  body {
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+/* max-width 768px: 2 columns */
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+}
+
+/* max-width 480px: 1 column */
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
